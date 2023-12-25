@@ -11,7 +11,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const EmButton = forwardRef<HTMLButtonElement, Props>((props, forwardedRef) => {
 	const { isLoading, children, ...otherProps } = props;
-	/* eslint-disable */
+	// eslint-disable-next-line
 	console.log("test");
 	return (
 		<button

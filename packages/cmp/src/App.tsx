@@ -2,6 +2,7 @@ import { TgButton, NormalButton, StyledButton, EmButton, CmpIcon } from "@packag
 import "./App.scss";
 
 function App() {
+	// eslint-disable-next-line
 	console.log("test");
 	return (
 		<>
