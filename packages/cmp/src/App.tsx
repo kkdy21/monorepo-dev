@@ -5,7 +5,7 @@ function App() {
 	// eslint-disable-next-line
 	console.log("test");
 	return (
-		<>
+		<div className="testBox">
 			<TgButton>Test</TgButton>
 			{/*<TgImg url="testImage1.png"></TgImg>*/}
 			<NormalButton></NormalButton>
@@ -13,7 +13,7 @@ function App() {
 			<EmButton>test</EmButton>
 			<CmpIcon iconName={"up"}></CmpIcon>
 			<CmpIcon iconName={"zap"}></CmpIcon>
-		</>
+		</div>
 	);
 }
 

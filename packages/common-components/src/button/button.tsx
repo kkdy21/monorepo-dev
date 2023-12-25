@@ -2,7 +2,7 @@
 import { ReactNode } from "react";
 import styled from "@emotion/styled";
 // import styled from "styled-components";
-import "./button.scss";
+import "./button.module.scss";
 
 type ButtonProps = {
 	children: ReactNode;
