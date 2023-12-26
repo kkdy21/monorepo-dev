@@ -11,10 +11,10 @@
     "components": "yarn workspace @package/common-components",
     "lint": "yarn workspaces foreach --all run lint",
     "lint-fix": "yarn workspaces foreach --all run lint-fix",
-    "format": "prettier --write --cache ."
+    "format": "prettier --write --cache .",
+    "postinstall": "yarn husky install"
   },
   "devDependencies": {
-    "@emotion/eslint-plugin": "^11.11.0",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
     "eslint": "^8.56.0",
