@@ -1,9 +1,13 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-
+import legacy from "@vitejs/plugin-legacy";
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
+		legacy({
+			targets: ["chrome > 60", "IE 10"],
+		}),
+
 		react({
 			jsxImportSource: "@emotion/react",
 			babel: {
@@ -15,11 +19,6 @@ export default defineConfig({
 							labelFormat: "[dirname]--[filename]--[local]___",
 						},
 					],
-					"@babel/plugin-transform-runtime",
-				],
-				presets: [
-					["@babel/preset-react", { runtime: "automatic", importSource: "@emotion/react" }],
-					["@babel/preset-typescript", { onlyRemoveTypeImports: true }],
 				],
 			},
 		}),
