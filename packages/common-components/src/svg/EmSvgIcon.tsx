@@ -1,5 +1,4 @@
 import React, { ReactElement, useEffect, useState } from "react";
-
 export interface IconProps {
 	name: string;
 	color?: string;

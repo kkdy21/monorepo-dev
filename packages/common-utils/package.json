@@ -1,0 +1,12 @@
+{
+  "name": "@package/common-utils",
+  "version": "0.0.0",
+  "packageManager": "yarn@4.0.2",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "lint": "eslint './src/**/*.{ts,tsx,js,jsx}' --max-warnings 0",
+    "lint-fix": "eslint --fix './src/**/*.{ts,tsx,js,jsx}' --max-warnings 0"
+  }
+}
