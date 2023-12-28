@@ -1,13 +1,14 @@
 //tsconfig.json
 
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "moduleResolution": "bundler",
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react"
-  },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"moduleResolution": "bundler",
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "@emotion/react",
+		"types": ["vite-plugin-svgr/client"]
+	},
+	"include": ["src,svg.d.ts"],
+	"references": [{ "path": "./tsconfig.node.json" }]
 }

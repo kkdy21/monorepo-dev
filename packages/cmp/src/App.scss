@@ -1,15 +1,20 @@
 // css 구체화가 적용되어있으므로 스타일드 컴포넌트보다 스타일이 우선시 된다.
 
 .testBox {
-  .normalButton {
-    border-color: yellow;
-  }
+	.normalButton {
+		border-color: yellow;
+	}
 
-  .tgButton {
-    border-color: pink;
-  }
+	.tgButton {
+		border-color: pink;
+	}
 
-  .testBtn {
-    border-color: blue;
-  }
+	.testBtn {
+		border-color: blue;
+	}
+	.svgTest {
+		width: 40px;
+		height: 40px;
+		color: yellow;
+	}
 }

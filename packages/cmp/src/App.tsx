@@ -1,4 +1,4 @@
-import { TgButton, NormalButton, StyledButton, EmButton, CmpIcon, BarChart, TgImg } from "@package/common-components";
+import { TgButton, NormalButton, StyledButton, EmButton, BarChart, DynamicSvgIcon } from "@package/common-components";
 import "./App.scss";
 
 function App() {
@@ -7,13 +7,14 @@ function App() {
 	return (
 		<div className="testBox">
 			<TgButton>Test</TgButton>
-			<TgImg url="testImage1.png"></TgImg>
 			<NormalButton></NormalButton>
 			<StyledButton className="testBtn">testBtn</StyledButton>
 			<EmButton>test</EmButton>
-			<CmpIcon iconName={"up"}></CmpIcon>
-			<CmpIcon iconName={"zap"}></CmpIcon>
 			<BarChart></BarChart>
+			<DynamicSvgIcon iconProps={{ name: "arrow-right", color: "red", size: 40 }}></DynamicSvgIcon>
+			<DynamicSvgIcon iconProps={{ name: "face-smile", color: "blue", size: 40 }}></DynamicSvgIcon>
+			<DynamicSvgIcon iconProps={{ name: "asd", color: "blue", size: 40 }}></DynamicSvgIcon>
+			<img style={{ width: "100px", height: "100px" }} src="/images/testImage1.png" />
 		</div>
 	);
 }

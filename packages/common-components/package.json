@@ -1,27 +1,27 @@
 {
-  "name": "@package/common-components",
-  "private": true,
-  "version": "0.0.0",
-  "packageManager": "yarn@4.0.2",
-  "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "d3": "^7.8.5"
-  },
-  "devDependencies": {
-    "@types/d3": "^7.4.3",
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^5.3.3"
-  },
-  "scripts": {
-    "lint": "eslint './src/**/*.{ts,tsx,js,jsx}' --max-warnings 0",
-    "lint-fix": "eslint --fix './src/**/*.{ts,tsx,js,jsx}' --max-warnings 0"
-  },
-  "main": "./src/index.ts",
-  "exports": {
-    ".": "./src/index.ts"
-  }
+	"name": "@package/common-components",
+	"private": true,
+	"version": "0.0.0",
+	"packageManager": "yarn@4.0.2",
+	"dependencies": {
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"d3": "^7.8.5"
+	},
+	"devDependencies": {
+		"@types/d3": "^7.4.3",
+		"@types/react": "^18.2.43",
+		"@types/react-dom": "^18.2.17",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"typescript": "^5.3.3"
+	},
+	"scripts": {
+		"lint": "eslint './src/**/*.{ts,tsx,js,jsx}' --max-warnings 0",
+		"lint-fix": "eslint --fix './src/**/*.{ts,tsx,js,jsx}' --max-warnings 0"
+	},
+	"main": "./src/index.ts",
+	"exports": {
+		".": "./src/index.ts"
+	}
 }

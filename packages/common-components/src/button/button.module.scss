@@ -1,11 +1,12 @@
 //css 우선순위로 사용, 이름.module로 css 중복을 방지
 
-.tgButton{
-  border-color: blue;}
-
-.normalButton{
-  border : 1px solid red
+.tgButton {
+	border-color: blue;
 }
-.testBtn.testBtn{
-  width: 200px !important;
+
+.normalButton {
+	border: 1px solid red;
+}
+.testBtn.testBtn {
+	width: 200px !important;
 }

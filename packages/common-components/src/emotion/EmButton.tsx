@@ -22,7 +22,8 @@ const EmButton = forwardRef<HTMLButtonElement, Props>((props, forwardedRef) => {
 				width: 100px;
 				height: 100px;
 			`}
-			{...otherProps}>
+			{...otherProps}
+		>
 			{isLoading ? "로딩중..asd." : children}
 		</button>
 	);
