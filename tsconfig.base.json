@@ -30,7 +30,7 @@
 			"path": "packages/common-components"
 		},
 		{
-			"path": "packages/common-hooks"
+			"path": "packages/common-consts"
 		}
 	],
 	"exclude": ["packages/**/dist/**"],

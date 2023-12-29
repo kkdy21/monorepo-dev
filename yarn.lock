@@ -1992,7 +1992,7 @@ __metadata:
     "@emotion/react": "npm:^11.11.1"
     "@emotion/styled": "npm:^11.11.0"
     "@package/common-components": "npm:*"
-    "@package/common-hooks": "npm:*"
+    "@package/common-consts": "npm:*"
     "@package/common-utils": "npm:*"
     "@types/react": "npm:^18.2.43"
     "@types/react-dom": "npm:^18.2.17"
@@ -2016,9 +2016,12 @@ __metadata:
   dependencies:
     "@emotion/react": "npm:^11.11.1"
     "@emotion/styled": "npm:^11.11.0"
+    "@package/common-consts": "npm:*"
+    "@package/common-utils": "npm:*"
     "@types/d3": "npm:^7.4.3"
     "@types/react": "npm:^18.2.43"
     "@types/react-dom": "npm:^18.2.17"
+    "@types/react-router-dom": "npm:^5.3.3"
     d3: "npm:^7.8.5"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
@@ -2026,9 +2029,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@package/common-hooks@npm:*, @package/common-hooks@workspace:packages/common-hooks":
+"@package/common-consts@npm:*, @package/common-consts@workspace:packages/common-consts":
   version: 0.0.0-use.local
-  resolution: "@package/common-hooks@workspace:packages/common-hooks"
+  resolution: "@package/common-consts@workspace:packages/common-consts"
   dependencies:
     "@types/react": "npm:^18.2.43"
     "@types/react-dom": "npm:^18.2.17"
@@ -2628,6 +2631,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/history@npm:^4.7.11":
+  version: 4.7.11
+  resolution: "@types/history@npm:4.7.11"
+  checksum: 3facf37c2493d1f92b2e93a22cac7ea70b06351c2ab9aaceaa3c56aa6099fb63516f6c4ec1616deb5c56b4093c026a043ea2d3373e6c0644d55710364d02c934
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.12":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
@@ -2662,6 +2672,27 @@ __metadata:
   dependencies:
     "@types/react": "npm:*"
   checksum: 74dba11a1b8156f3a763f3fca1fb4ec1dcd349153279b8bf79210024a69f994bf2cf0728198c047f8130c5318420ea56281b0a4ef84c8ae943cd9a0cac705220
+  languageName: node
+  linkType: hard
+
+"@types/react-router-dom@npm:^5.3.3":
+  version: 5.3.3
+  resolution: "@types/react-router-dom@npm:5.3.3"
+  dependencies:
+    "@types/history": "npm:^4.7.11"
+    "@types/react": "npm:*"
+    "@types/react-router": "npm:*"
+  checksum: a9231a16afb9ed5142678147eafec9d48582809295754fb60946e29fcd3757a4c7a3180fa94b45763e4c7f6e3f02379e2fcb8dd986db479dcab40eff5fc62a91
+  languageName: node
+  linkType: hard
+
+"@types/react-router@npm:*":
+  version: 5.1.20
+  resolution: "@types/react-router@npm:5.1.20"
+  dependencies:
+    "@types/history": "npm:^4.7.11"
+    "@types/react": "npm:*"
+  checksum: 1f7eee61981d2f807fa01a34a0ef98ebc0774023832b6611a69c7f28fdff01de5a38cabf399f32e376bf8099dcb7afaf724775bea9d38870224492bea4cb5737
   languageName: node
   linkType: hard
 
@@ -3289,6 +3320,15 @@ __metadata:
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
   checksum: 1f90262d5f6230a17e27d0c190b09d47ebe7efdd76a03b5a1127863f7b3c9aec4c3e6c8bb3a7bbf81d553d56a1fd35728f5a8ef4c63f867ac8d690109742a8c1
+  languageName: node
+  linkType: hard
+
+"cmp@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "cmp@npm:0.0.2"
+  dependencies:
+    hashkeys: "npm:0.0.1"
+  checksum: 77fdf3d049bf3692c1ab47304a26568460aaf0d943dbd27ca89112b56583f6e4c8cfc88ae7222f7b596b76a68c74632f6f89509b285158ad37b86bec01d69bf7
   languageName: node
   linkType: hard
 
@@ -4770,6 +4810,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hashkeys@npm:0.0.1":
+  version: 0.0.1
+  resolution: "hashkeys@npm:0.0.1"
+  checksum: 83ccc48483947844e9888756b5e6c62686650100b3782c82821eb54e24a309f814c95fde1e6c531b194131fad20c9da55b161c6cf94307f0be342ff4ef9fae20
+  languageName: node
+  linkType: hard
+
 "hasown@npm:^2.0.0":
   version: 2.0.0
   resolution: "hasown@npm:2.0.0"
@@ -5564,6 +5611,7 @@ __metadata:
     "@emotion/eslint-plugin": "npm:^11.11.0"
     "@typescript-eslint/eslint-plugin": "npm:^6.15.0"
     "@typescript-eslint/parser": "npm:^6.15.0"
+    cmp: "npm:^0.0.2"
     eslint: "npm:^8.56.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-import-resolver-typescript: "npm:^3.6.1"

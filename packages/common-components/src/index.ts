@@ -1,6 +1,6 @@
-export { TgButton, NormalButton, StyledButton } from "./button/button";
+export { TgButton, NormalButton, StyledButton } from "./button/exButton";
 export { EmButton } from "./emotion/EmButton";
-export { DynamicSvgIcon } from "./svg/EmSvgIcon";
+export { DynamicSvgIcon } from "./svg/tg-icon";
 export { BarChart } from "./pie/tgPie";
 
 import "./custom.scss";
