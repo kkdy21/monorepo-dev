@@ -1,11 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.scss";
 import ErrorPage from "./app/pages/error/error.page";
-import Root, { loader as rootLoader } from "./app/layout/main/layout.main";
+import Root from "./app/layout/main/layout.main";
 import Contacts from "./app/pages/content/contacts";
+import Name from "./app/pages/name/name";
 
 const router = createBrowserRouter([
 	{
@@ -17,6 +17,10 @@ const router = createBrowserRouter([
 			{
 				path: "contacts/:contactId",
 				element: <Contacts />,
+			},
+			{
+				path: "name",
+				element: <Name />,
 			},
 		],
 	},

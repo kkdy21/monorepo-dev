@@ -17,7 +17,7 @@ export default function Root() {
 						</li>
 						<li>
 							<DynamicSvgIcon iconProps={{ name: "settings-01" }} />
-							<Link to={`/contacts/2`}>Your Friend</Link>
+							<Link to={`/name`}>Your Friend</Link>
 						</li>
 					</ul>
 				</nav>

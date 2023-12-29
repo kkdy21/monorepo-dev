@@ -19,7 +19,8 @@
 		"@package/common-utils": "*",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.21.1"
+		"react-router-dom": "^6.21.1",
+		"zustand": "^4.4.7"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.23.6",

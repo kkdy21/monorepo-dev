@@ -18,7 +18,7 @@ export default function Contacts() {
 	return (
 		<div id="contact">
 			<div className="avatar">
-				<img key={contact.avatar} src={contact.avatar || null} />
+				<img key={contact.avatar} src={contact.avatar || undefined} />
 			</div>
 
 			<div>
