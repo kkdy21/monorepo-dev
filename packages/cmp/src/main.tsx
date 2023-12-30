@@ -6,6 +6,18 @@ import ErrorPage from "./app/pages/error/error.page";
 import Root from "./app/layout/main/layout.main";
 import Contacts from "./app/pages/content/contacts";
 import Name from "./app/pages/name/name";
+import UserList from "./app/pages/userlist/userlist";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+
+const contact = {
+	first: "Your",
+	last: "Name",
+	avatar: "/images/testImage.png",
+	twitter: "your_handle",
+	notes: "Some notes",
+	favorite: true,
+};
 
 const router = createBrowserRouter([
 	{
@@ -16,18 +28,27 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "contacts/:contactId",
-				element: <Contacts />,
+				element: <Contacts user={contact} />,
 			},
 			{
 				path: "name",
 				element: <Name />,
 			},
+			{
+				path: "userlist",
+				element: <UserList />,
+			},
 		],
 	},
 ]);
 
+const queryClient = new QueryClient();
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<QueryClientProvider client={queryClient}>
+			<ReactQueryDevtools initialIsOpen={false} />
+			<RouterProvider router={router} />
+		</QueryClientProvider>
 	</React.StrictMode>
 );

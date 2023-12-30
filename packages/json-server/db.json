@@ -1,0 +1,23 @@
+{
+  "userList": [
+    {
+      "id": 1,
+      "first": "Your",
+      "last": "Name",
+      "avatar": "/images/testImage.png",
+      "twitter": "your_handle",
+      "notes": "Some notes",
+      "favorite": true
+    },
+    {
+      "id": 2,
+      "first": "Yasdour",
+      "last": "Naasdme",
+      "avatar": "/images/testImage.png",
+      "twitter": "yoadsur_handle",
+      "notes": "Some noadstes",
+      "favorite": true
+    }
+  ]
+}
+
