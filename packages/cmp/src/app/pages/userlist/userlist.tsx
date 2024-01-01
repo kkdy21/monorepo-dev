@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import { StyledButton } from "@package/common-components";
 import { getUserList } from "../../../services/api";
-import { IUser } from "../../../types";
+import { IUser } from "../../../@types";
 import Contacts from "../content/contacts";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 

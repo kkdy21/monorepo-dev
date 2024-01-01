@@ -1,6 +1,6 @@
 import { Form, useNavigate } from "react-router-dom";
 import { ReactElement } from "react";
-import { IUser } from "../../../types";
+import { IUser } from "../../../@types";
 
 export default function Contacts({ user }: { user: IUser }): ReactElement {
 	const navigate = useNavigate();
