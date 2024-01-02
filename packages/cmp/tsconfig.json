@@ -8,7 +8,6 @@
     "types": [
       "vite-plugin-svgr/client"
     ],
-    "declaration": true,
     "typeRoots" : ["./src/@types"]
   },
   "include": [

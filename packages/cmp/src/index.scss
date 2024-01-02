@@ -4,11 +4,11 @@
   .testBox {
     display: flex;
     flex-direction: column;
+    .testBtn{
+      border-color: green;
+    }
   }
 
-  .tgButton {
-    border-color: green;
-  }
 }
 
 html {

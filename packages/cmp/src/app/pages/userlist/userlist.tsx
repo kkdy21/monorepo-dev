@@ -1,24 +1,18 @@
 import { ReactElement } from "react";
 import { StyledButton } from "@package/common-components";
-import { getUserList } from "../../../services/api";
 import { IUser } from "../../../@types";
 import Contacts from "../content/contacts";
-import { useQuery, useQueryClient } from "@tanstack/react-query";
-
+import { useQueryClient } from "@tanstack/react-query";
+import useGetUser from "../../../services/hook/useGetUser";
 export default function UserList(): ReactElement {
 	const queryClient = useQueryClient();
 
-	const {
-		isLoading,
-		error,
-		data: userList,
-	} = useQuery<{ data: IUser[] }>({
-		queryKey: ["userlist"],
-		queryFn: getUserList,
-	});
+	const { isLoading, error, userList, refetch } = useGetUser();
 	const onClick = () => {
-		queryClient.invalidateQueries({ queryKey: ["userlist"] });
-		// refetch();
+		queryClient.invalidateQueries(
+			{ queryKey: ["userlist"] },
+			{ cancelRefetch: true }
+		);
 	};
 
 	if (isLoading) return <p>Loading</p>;
@@ -28,6 +22,7 @@ export default function UserList(): ReactElement {
 	return (
 		<>
 			<StyledButton onClick={onClick}>getUserList</StyledButton>
+			<StyledButton onClick={() => refetch()}>refetch</StyledButton>
 			<div>
 				{userList?.data.map((user: IUser) => (
 					<div key={user.id}>

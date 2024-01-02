@@ -26,6 +26,10 @@ export default function Root() {
 							<DynamicSvgIcon iconProps={{ name: "check-done-01" }} />
 							<Link to={`/userlist`}>React Query Test</Link>
 						</li>
+						<li onClick={() => setHeaderName("Emotions css")}>
+							<DynamicSvgIcon iconProps={{ name: "face-smile" }} />
+							<Link to={`/app`}>Emotions css</Link>
+						</li>
 					</ul>
 				</nav>
 			</div>

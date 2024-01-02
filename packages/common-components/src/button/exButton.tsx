@@ -1,11 +1,12 @@
 // packages/design-system/src/Button.tsx
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import styled from "@emotion/styled";
 // import styled from "styled-components";
 import "./exButton.module.scss";
 
 type ButtonProps = {
 	children: ReactNode;
+	className: string;
 };
 
 const StyledButton = styled.button`
@@ -15,8 +16,10 @@ const StyledButton = styled.button`
 	border-radius: 5px;
 `;
 
-const TgButton = ({ children }: ButtonProps) => {
-	return <StyledButton className="tgButton">{children}</StyledButton>;
+const TgButton: React.FC<ButtonProps> = (props) => {
+	return (
+		<StyledButton className={props.className}>{props.children}</StyledButton>
+	);
 };
 
 const NormalButton = () => {

@@ -11,11 +11,9 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const EmButton = forwardRef<HTMLButtonElement, Props>((props, forwardedRef) => {
 	const { isLoading, children, ...otherProps } = props;
-	// eslint-disable-next-line
-	console.log("test");
 	return (
 		<button
-			className="testBtn"
+			className={props.className}
 			ref={forwardedRef}
 			css={css`
 				border: 1px solid red;

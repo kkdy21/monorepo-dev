@@ -9,6 +9,7 @@ import Name from "./app/pages/name/name";
 import UserList from "./app/pages/userlist/userlist";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import App from "./App";
 
 const contact = {
 	first: "Your",
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
 			{
 				path: "userlist",
 				element: <UserList />,
+			},
+			{
+				path: "app",
+				element: <App />,
 			},
 		],
 	},
