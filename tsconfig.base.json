@@ -31,6 +31,9 @@
 		},
 		{
 			"path": "packages/common-consts"
+		},
+		{
+			"path": "packages/common-utils"
 		}
 	],
 	"exclude": ["packages/**/dist/**"],

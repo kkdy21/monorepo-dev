@@ -15,6 +15,7 @@ function useGetUser() {
 		queryFn: getUserList,
 		refetchIntervalInBackground: false,
 		refetchOnWindowFocus: false,
+		refetchOnMount: false,
 		retry: 2,
 		staleTime: 30 * 1000,
 	});
