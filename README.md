@@ -37,13 +37,16 @@ https://toss.tech/article/node-modules-and-yarn-berry
 
 ## react-query
 - react-query-tool
-- https://oyg0420.tistory.com/entry/React-Query-%EC%98%88%EC%A0%9C%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
+- react-query 상태
+  - https://oyg0420.tistory.com/entry/React-Query-%EC%98%88%EC%A0%9C%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
 
 
 ## Formatter, linter, typescript
 - intellij formatter 삭제
 - linter, formatter, typescript 설정은 한번 회의 진행 해야함.
   - airbnb
+
+https://www.typescriptlang.org/ko/docs/handbook/compiler-options.html
 ## 초기설정
 - ppt
 ## husky

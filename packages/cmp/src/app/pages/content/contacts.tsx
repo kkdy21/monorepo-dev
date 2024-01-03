@@ -4,6 +4,7 @@ import { IUser } from "../../../@types";
 
 export default function Contacts({ user }: { user: IUser }): ReactElement {
 	const navigate = useNavigate();
+
 	const occurError = () => {
 		navigate("/error");
 	};
