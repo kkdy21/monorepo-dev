@@ -23,12 +23,14 @@ https://toss.tech/article/node-modules-and-yarn-berry
 
 ## svg, img
 - 경로, 사용법
+- 동적 import
 
 ## routing
 - react-router-dom
 
 ## emotion vs styled-components
-- css 우선순위
+- css 우선순위( css 구체화 )
+- https://styled-components.com/docs/advanced#existing-css
 
 ## zustand
 - redux-devtool
@@ -43,12 +45,9 @@ https://toss.tech/article/node-modules-and-yarn-berry
 - linter, formatter, typescript 설정은 한번 회의 진행 해야함.
   - airbnb
 ## 초기설정
-
+- ppt
 ## husky
 - clone으로 안받을시
-
-## error handle
-- ppt 참고
 
 ## 달라진점
 - node version 18.10.0 -> 18.12.0(LTS)

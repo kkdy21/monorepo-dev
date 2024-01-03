@@ -1,6 +1,6 @@
 //css 우선순위로 사용, 이름.module로 css 중복을 방지
 
-.testBtn {
+.testBtn.testBtn {
 	border-color: pink;
 	width: 200px !important;
 }

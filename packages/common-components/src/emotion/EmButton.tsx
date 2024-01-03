@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import type { ButtonHTMLAttributes } from "react";
 
 import { css } from "@emotion/react";
-import "./EmButton.module.scss";
+import "./EmButton.scss";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 	isLoading?: boolean;
