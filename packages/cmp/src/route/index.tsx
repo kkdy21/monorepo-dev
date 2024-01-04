@@ -5,6 +5,7 @@ import Name from "../app/pages/name/name";
 import UserList from "../app/pages/userlist/userlist";
 import App from "../App";
 import { createBrowserRouter } from "react-router-dom";
+import { TestPage } from "../app/pages/test/test";
 
 const contact = {
 	first: "Your",
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
 			{
 				path: "app",
 				element: <App />,
+			},
+			{
+				path: "test",
+				element: <TestPage />,
 			},
 		],
 	},

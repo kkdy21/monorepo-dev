@@ -6,9 +6,8 @@
 [모노레포, 개발 툴](모노레포)
 
 ## 모노레포 관리도구
-https://d2.naver.com/helloworld/7553804
-https://toss.tech/article/node-modules-and-yarn-berry
-- 가벼움, running curve,  
+- https://d2.naver.com/helloworld/7553804
+- https://toss.tech/article/node-modules-and-yarn-berry
 
 ### yarn
 - pnp, zero-install, nodelinker, cache
@@ -20,6 +19,8 @@ https://toss.tech/article/node-modules-and-yarn-berry
     - .vite폴더
   - HMR
 - vite.config.ts
+
+## 폴더구조
 
 ## svg, img
 - 경로, 사용법
@@ -38,7 +39,7 @@ https://toss.tech/article/node-modules-and-yarn-berry
 ## react-query
 - react-query-tool
 - react-query 상태
-  - https://oyg0420.tistory.com/entry/React-Query-%EC%98%88%EC%A0%9C%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
+  - https://freestrokes.tistory.com/170
 
 
 ## Formatter, linter, typescript
