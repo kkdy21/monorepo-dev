@@ -4,7 +4,7 @@ import axios from "axios";
 const serverURL = import.meta.env.REACT_APP_SERVER_URL;
 
 /* eslint-disable-next-line */
-console.log(serverURL)
+// console.log(serverURL)
 export const jsonInstance = axios.create({
 	baseURL: serverURL,
 	timeout: 3000,

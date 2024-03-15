@@ -55,3 +55,7 @@ https://www.typescriptlang.org/ko/docs/handbook/compiler-options.html
 
 ## 달라진점
 - node version 18.10.0 -> 18.12.0(LTS)
+
+## 실행방법
+- docker-compose up -d
+- docker-compose exec (container) bash

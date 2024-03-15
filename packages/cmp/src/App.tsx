@@ -3,7 +3,7 @@ import "./App.scss";
 
 function App() {
 	// eslint-disable-next-line
-	console.log("test");
+	// console.log("test");
 	return (
 		<div className="testBox">
 			<EmButton className="testBtn">test</EmButton>
